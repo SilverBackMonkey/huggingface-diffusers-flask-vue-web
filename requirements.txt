@@ -1,0 +1,8 @@
+python-dotenv
+Flask
+numpy
+Pillow
+diffusers
+torch
+transformers
+piexif

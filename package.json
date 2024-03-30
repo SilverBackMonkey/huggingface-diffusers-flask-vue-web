@@ -1,0 +1,30 @@
+{
+	"name": "diffusers-web",
+	"version": "0.0.0",
+	"license": "MIT",
+	"scripts": {
+		"build": "rollup -c rollup.config.js",
+		"dev": "rollup -c -w rollup.config.js",
+		"start": "python ./main.py",
+		"start3": "python3 ./main.py"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@rollup/plugin-alias": "3.0.0",
+		"@rollup/plugin-commonjs": "11.0.1",
+		"@rollup/plugin-node-resolve": "7.0.0",
+		"@rollup/plugin-replace": "2.3.0",
+		"@vue/eslint-plugin": "4.2.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-html": "^6.0.0",
+		"exifreader": "^4.12.0",
+		"js-md5": "^0.7.3",
+		"md5": "^2.3.0",
+		"node-fetch": "^3.2.10",
+		"rollup": "1.29.0",
+		"rollup-plugin-vue": "4.7.2",
+		"stream": "^0.0.2",
+		"vue": "2.6.11",
+		"vue-template-compiler": "2.6.11"
+	}
+}
