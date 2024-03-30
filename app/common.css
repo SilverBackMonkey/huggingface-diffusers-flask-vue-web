@@ -1,0 +1,101 @@
+
+html
+{
+	overflow: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+	white-space: nowrap;
+	margin: 0;
+	height: 100vh;
+}
+
+header fieldset
+{
+	display: inline-block;
+	margin: 0 .6em;
+	border: 0;
+	padding: 0;
+}
+
+header
+{
+	margin: 20px 0;
+	padding: 0 1em;
+	flex: 0 0 2em;
+	display: flex;
+}
+
+header .description
+{
+	flex: 1 1;
+}
+
+header > *
+{
+	flex: 0 0;
+	margin: 0 .2em;
+}
+
+header > * > *
+{
+	height: 100%;
+}
+
+header .submit
+{
+	flex: 0 0 4em;
+}
+
+main
+{
+	overflow-y: auto;
+	flex: 1 1;
+}
+
+main section
+{
+	padding: 1em;
+}
+
+main section .picture
+{
+	position: relative;
+	display: inline-block;
+	margin: 4px;
+}
+
+main section .picture .download
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+	font-size: 28px;
+}
+
+main section .picture:hover .download
+{
+	visibility: visible;
+}
+
+main section .error
+{
+	color: red;
+}
+
+@media (pointer:none), (pointer:coarse)
+{
+	html
+	{
+		font-size: 20px;
+	}
+
+	body
+	{
+		box-sizing: border-box;
+		padding: 2em 0 8em;
+	}
+}
